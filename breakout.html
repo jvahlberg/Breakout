@@ -1,0 +1,43 @@
+<!--
+    Josh Vahlberg
+    Web Development
+    Homework 5
+    Last modified: 11/8/2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Breakout</title>
+    <link rel="stylesheet" href="breakout.css">
+    <script src="breakout.js"></script>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+
+    <div id="options">
+        <fieldset>
+            <legend>Options</legend>
+            <div>
+                <button id="pause">Toggle Pause Game</button>
+            </div>
+            <div id="sliderContainer">
+                <label for="speedSlider">
+                    Game Speed: <b id="gameSpeed">1</b>
+                </label>
+                <input id="speedSlider" type="range" min="0.05" max="4" step="0.05" value="1">
+            </div>
+            <div id="rcContainer">
+                <button id="reset">New Game (Reset)</button>
+                <button id="continue">Continue Playing</button>
+            </div>
+            <div>
+                <button id="reload">Reload Window</button>
+            </div>
+        </fieldset>
+    </div>
+</body>
+
+</html>
